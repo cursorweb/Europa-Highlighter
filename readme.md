@@ -6,6 +6,11 @@
 
 - Highlights Europa code
 
+## Testing it out
+Click on the debugger, and click on run extension.
+Developer > inspect editor tokens and scopes to view keys/tokens.
+
+
 ## Release Notes
 
 ### 1.0.0
