@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Builder</title>
+</head>
+
+<body>
+    <!-- 
+    logo.png -> landing page icon
+    europa_transparent.png -> logo.png w/o background
+    icon.png -> file icons
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.9/lib/p5.min.js"></script>
+    <script>
+        function preload() {
+            S = 128;
+            K = 91
+            clanker = loadImage("./europa_transparent.png");
+        }
+
+        function setup() {
+            createCanvas(K + K / 3, K);
+            image(clanker, K / 3, 0, K, K)
+        }
+    </script>
+</body>
+
+</html>

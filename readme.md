@@ -1,3 +1,4 @@
+![Europa Icon](./images/logo.png)
 # EuropaLang Highlighter
 
 **Highlights [Europa](https://github.com/cursorweb/Europa-Lang) code.**

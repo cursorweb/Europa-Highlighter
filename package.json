@@ -1,43 +1,51 @@
 {
-	"name": "europalang-highlighter",
-	"displayName": "EuropaLang Highlighter",
-	"description": "Syntax highlighting for EuropaLang",
-	"version": "1.2.0",
-	"icon": "images/logo.png",
-	"publisher": "Coder100",
-	"engines": {
-		"vscode": "^1.58.0"
-	},
-	"categories": [
-		"Programming Languages"
-	],
-	"contributes": {
-		"languages": [
-			{
-				"id": "europa",
-				"aliases": [
-					"Europa",
-					"europa"
-				],
-				"extensions": [
-					".eo",
-					".europa"
-				],
-				"configuration": "./language-configuration.json"
-			}
-		],
-		"grammars": [
-			{
-				"language": "europa",
-				"scopeName": "source.europa",
-				"path": "./syntaxes/europa.tmLanguage.json"
-			}
-		],
-		"snippets": [
-			{
-				"language": "europa",
-				"path": "./intellisense/snippets.json"
-			}
-		]
-	}
+    "name": "europalang-highlighter",
+    "displayName": "EuropaLang Highlighter",
+    "description": "Syntax highlighting for EuropaLang",
+    "version": "1.2.0",
+    "icon": "images/logo.png",
+    "publisher": "cursorweb",
+    "engines": {
+        "vscode": "^1.58.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/europalang/Europa-Highlighter.git"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "europa",
+                "aliases": [
+                    "Europa",
+                    "europa"
+                ],
+                "extensions": [
+                    ".eo",
+                    ".europa"
+                ],
+                "configuration": "./language-configuration.json",
+                "icon": {
+                    "dark": "./images/icon.png",
+                    "light": "./images/logo.png"
+                }
+            }
+        ],
+        "grammars": [
+            {
+                "language": "europa",
+                "scopeName": "source.europa",
+                "path": "./syntaxes/europa.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "europa",
+                "path": "./intellisense/snippets.json"
+            }
+        ]
+    }
 }
