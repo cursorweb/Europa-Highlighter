@@ -30,3 +30,15 @@ Add snippets.
 ### 1.2.2
 
 Edge cases like `6_._7` and `_` now highlight properly.
+
+
+## Building
+First, install `vsce`:
+```
+npm i -g vsce
+```
+Then, to package:
+```
+vsce package
+```
+And, to put it on the marketplace, visit the [Visual Studio Marketplace publisher management page](https://marketplace.visualstudio.com/manage).
