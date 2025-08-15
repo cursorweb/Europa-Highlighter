@@ -2,11 +2,21 @@
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
     "name": "Europa",
     "patterns": [
-        { "include": "#comments" },
-        { "include": "#constants" },
-        { "include": "#keywords" },
-        { "include": "#strings" },
-        { "include": "#entities" }
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#constants"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#entities"
+        }
     ],
     "repository": {
         "keywords": {
@@ -28,7 +38,9 @@
                     "begin": "\"",
                     "end": "\"",
                     "patterns": [
-                        { "include": "#escapes" }
+                        {
+                            "include": "#escapes"
+                        }
                     ]
                 },
                 {
@@ -36,7 +48,9 @@
                     "begin": "'",
                     "end": "'",
                     "patterns": [
-                        { "include": "#escapes" }
+                        {
+                            "include": "#escapes"
+                        }
                     ]
                 }
             ]
@@ -70,7 +84,7 @@
             "patterns": [
                 {
                     "name": "entity.name.function.europa",
-                    "match": "\\b[a-z]\\w*(?=\\()"
+                    "match": "\\b[a-z_]\\w*(?=\\()"
                 },
                 {
                     "name": "entity.name.class.europa",
@@ -78,7 +92,7 @@
                 },
                 {
                     "name": "variable.europa",
-                    "match": "\\b[a-z]\\w*\\b"
+                    "match": "\\b[a-z_]\\w*\\b"
                 }
             ]
         },
@@ -90,7 +104,7 @@
                 },
                 {
                     "name": "constant.numeric.europa",
-                    "match": "\\b[\\d_]+(\\.[\\d_]*)?\\b"
+                    "match": "\\b\\d[\\d_]*(\\.\\d[\\d_]*)?\\b"
                 }
             ]
         }

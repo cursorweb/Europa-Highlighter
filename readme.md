@@ -27,3 +27,6 @@ Boolean comparators are now highlighted as keywords.
 
 Add snippets.
 
+### 1.2.2
+
+Edge cases like `6_._7` and `_` now highlight properly.
